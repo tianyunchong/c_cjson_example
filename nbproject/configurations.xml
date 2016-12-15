@@ -29,6 +29,16 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/local/include</pElem>
+            <pElem>/usr/local/include/cjson</pElem>
+            <pElem>/usr/local/lib</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerOptionItem>-l cjson</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
       </compileType>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>

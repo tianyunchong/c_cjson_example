@@ -13,12 +13,16 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <cjson/cJSON.h>
 /*
  * 
  */
 int main(int argc, char** argv) {
-
+    char * str = "{\"test\":{\"aaa\":11,\"bbb\":21},\"ccc\":223}";
+    cJSON * root = cJSON_Parse(str);
+    //cJSON *format = cJSON_GetObjectItem(root, "format");
+    int ccc = cJSON_GetObjectItem(root, "ccc")->valueint;
+    printf("%d\n", ccc);
     return (EXIT_SUCCESS);
 }
 

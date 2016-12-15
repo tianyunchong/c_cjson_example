@@ -52,7 +52,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=-L/usr/local/include -L/usr/local/include/cjson -L/usr/local/lib -l cjson
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
